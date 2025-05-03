@@ -40,8 +40,8 @@ class Solution{
             return nullptr;
         }
         else{ // must use the fast and slow
-            ListNode *slow = head->next;
-            ListNode *fast = head->next->next;
+            ListNode *slow = current;
+            ListNode *fast = current;
             
             while (fast != nullptr && fast->next != nullptr){ // explain to kuya in paint
                 slow = slow->next; // slow is the pointer you return
